@@ -25,7 +25,7 @@ jobs:
       run: dotnet publish WebApplication1.csproj -c Release -o release --nologo
       
     - name: Commit wwwroot to GitHub Pages
-      uses: KristofferBDahl/github-pages-deploy-action@3.7.1
+      uses: WebStuff/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: main
